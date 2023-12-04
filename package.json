@@ -1,0 +1,27 @@
+{
+  "name": "electron-vite-react-template",
+  "private": true,
+  "version": "0.0.0",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "elc": "yarn build --mode=electron && electron-packager . app --icon=./SB128_128.ico --out=./out11 --electron-version=26.0.0 --overwrite --no-prune --asar --ignore=node_modules --ignore=out --ignore=src --igonre=electron --igonre=.git* --ignore=.idea --ignore=.vscode/* --ignore=yarn* --ignore=public --ignore=README.md --ignore=rcedit*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "20.10.3",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "@vitejs/plugin-react": "4.2.0",
+    "electron": "26.0.0",
+    "electron-packager": "17.1.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "1.69.5",
+    "typescript": "5.2.2",
+    "vite": "5.0.0",
+    "vite-plugin-electron": "0.15.4"
+  }
+}
